@@ -1,0 +1,22 @@
+{
+  "name": "baltimore-ethnic-markets",
+  "version": "1.0.0",
+  "description": "This project aims to map and provide basic information about ethnic food markets in the Baltimore region. Many of these markets are small and scattered in locations off the beaten path. My hope is that the markets and their prospective customers will benefit from a web site that aggregates information in one place and is easy to search.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tuspecht/baltimore-ethnic-markets.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tuspecht/baltimore-ethnic-markets/issues"
+  },
+  "homepage": "https://github.com/tuspecht/baltimore-ethnic-markets#readme",
+  "devDependencies": {
+    "request": "^2.83.0"
+  }
+}
