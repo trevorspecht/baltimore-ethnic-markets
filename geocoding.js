@@ -7,19 +7,19 @@ request('http://api.mapbox.com/geocoding/v5/mapbox.places/address=8837+Belair+Ro
   }
   const data = JSON.parse(body);
 
-  const array = {features:
-                  [{
-                    relevance: 1
-                  },
-                    {
-                      relevance: 2
-                    },
-                    {
-                      relevance: 3
-                    }
-                  ]};
-
-  const array123 = [1, 2, 3];
+  // const array = {features:
+  //                 [{
+  //                   relevance: 1
+  //                 },
+  //                   {
+  //                     relevance: 2
+  //                   },
+  //                   {
+  //                     relevance: 3
+  //                   }
+  //                 ]};
+  //
+  // const array123 = [1, 2, 3];
 
 
 // console.log(data);
@@ -29,8 +29,9 @@ request('http://api.mapbox.com/geocoding/v5/mapbox.places/address=8837+Belair+Ro
   //   console.log(data.features[i].place_name);
   // }
 
-  array123.forEach(function(element) {
-  console.log(element);
+  data.features.forEach(function(element) {
+  console.log(element.relevance);
+  console.log(element.place_name);
   });
 
 });
