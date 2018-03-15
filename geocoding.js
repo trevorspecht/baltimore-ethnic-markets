@@ -1,28 +1,12 @@
 
 const request = require('request');
-
-request('http://api.mapbox.com/geocoding/v5/mapbox.places/address=8837+Belair+Road.json?access_token=pk.eyJ1IjoidHJldm9yc3BlY2h0IiwiYSI6ImNqNDdjZ2hvNjAxYWkzMmp0YW90bWhsZmwifQ.0d4-iKYzF8sy7YFpzVOKUA', function (error, response, body) {
+request('https://api.mapbox.com/geocoding/v5/mapbox.places/%C2%A06020%20Eastern%20Ave%2C%20Baltimore%2C%20MD%2021224%2C%20United%20States.json?access_token=pk.eyJ1IjoidHJldm9yc3BlY2h0IiwiYSI6ImNqNDdjZ2hvNjAxYWkzMmp0YW90bWhsZmwifQ.0d4-iKYzF8sy7YFpzVOKUA', function (error, response, body) {
   if(error){
     console.log(error);
   }
   const data = JSON.parse(body);
 
-  // const array = {features:
-  //                 [{
-  //                   relevance: 1
-  //                 },
-  //                   {
-  //                     relevance: 2
-  //                   },
-  //                   {
-  //                     relevance: 3
-  //                   }
-  //                 ]};
-  //
-  // const array123 = [1, 2, 3];
-
-
-// console.log(data);
+  // console.log(data);
 
   // for (i = 0; i < data.features.length; i++) {
   //   console.log(data.features[i].relevance);
@@ -30,7 +14,7 @@ request('http://api.mapbox.com/geocoding/v5/mapbox.places/address=8837+Belair+Ro
   // }
 
   data.features.forEach(function(element) {
-  console.log(element.relevance);
+  console.log(element.center);
   console.log(element.place_name);
   });
 
