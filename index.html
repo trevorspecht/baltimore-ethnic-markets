@@ -5,7 +5,6 @@
     <title>Baltimore Ethnic Markets</title>
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.js'></script>
-    <script type="text/javascript" src="geodata.json"></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.css' rel='stylesheet' />
     <style>
         body { margin:0; padding:0; }
@@ -25,69 +24,23 @@ var map = new mapboxgl.Map({
     zoom: 10 // starting zoom
 });
 
+let markets;
+
+function reqListener () {
+  markets = JSON.parse(this.responseText);
+  // console.log(this.responseText);
+}
+var oReq = new XMLHttpRequest();
+oReq.addEventListener("load", reqListener);
+oReq.open("GET", "geodata.json");
+oReq.send();
+
+
 map.on('load', function () {
 
-  // var geojson = require("geodata.json");
-  // var jsonobj = JSON.parse(geojson);
+    // console.log(markets);
 
-    map.addLayer({
-        "id": "points",
-        "type": "symbol",
-        "source": {
-            "type": "geojson",
-            "data": {
-                "type": "FeatureCollection",
-                "features": [{
-                    "type": "Feature",
-                    "geometry": {
-                        "type": "Point",
-                        "coordinates": [-77.03238901390978, 38.913188059745586]
-                    },
-                    "properties": {
-                        "title": "Mapbox DC",
-                        "icon": "monument"
-                    }
-                }, {
-                    "type": "Feature",
-                    "geometry": {
-                        "type": "Point",
-                        "coordinates": [-122.414, 37.776]
-                    },
-                    "properties": {
-                        "title": "Mapbox SF",
-                        "icon": "harbor"
-                    }
-                }, {
-                    "type": "Feature",
-                    "geometry": {
-                        "type": "Point",
-                        "coordinates": [-76.668333,39.175278]
-                    },
-                    "properties": {
-                        "title": "BWI Thurgood Marshall Airport",
-                        "icon": "airport"
-                    }
-                }, {
-                    "type": "Feature",
-                    "geometry": {
-                        "type": "Point",
-                        "coordinates": [-76.483359,39.395461]
-                    },
-                    "properties": {
-                        "title": "VMart Filipino Grocery",
-                        "icon": "marker"
-                    }
-                }]
-            }
-        },
-        "layout": {
-            "icon-image": "{icon}-15",
-            "text-field": "{title}",
-            "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
-            "text-offset": [0, 0.6],
-            "text-anchor": "top"
-        }
-    });
+    map.addLayer(markets);
 });
 </script>
 
