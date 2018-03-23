@@ -32,7 +32,7 @@ var map = new mapboxgl.Map({
     zoom: 10.5 // starting zoom
 });
 
-let markets;
+var markets;
 
 function reqListener () {
   markets = JSON.parse(this.responseText);
@@ -59,16 +59,22 @@ map.on('load', function () {
           "text-anchor": "top"
       }
     });
+
+    // add markers to map
+    markets.features.forEach(function(marker) {
+
+      // create a HTML element for each feature
+      var el = document.createElement('div');
+      el.className = 'marker';
+
+      // make a marker for each feature and add to the map
+      new mapboxgl.Marker(el)
+      .setLngLat(marker.geometry.coordinates)
+      .addTo(map);
+    });
+
 });
 
-// create a HTML element for each feature
-var el = document.createElement('div');
-el.className = 'marker';
-
-// make a marker for each feature and add to the map
-new mapboxgl.Marker(el)
-.setLngLat([-76.562197, 39.392881])
-.addTo(map);
 </script>
 
 </body>
