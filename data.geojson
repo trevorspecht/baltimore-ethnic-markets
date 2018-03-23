@@ -1,58 +1,137 @@
 {
-       "id": "points",
-       "type": "symbol",
-       "source": {
-           "type": "geojson",
-           "data": {
-               "type": "FeatureCollection",
-               "features": [{
-                   "type": "Feature",
-                   "geometry": {
-                       "type": "Point",
-                       "coordinates": [ -76.543952, 39.287818 ]
-                   },
-                   "properties": {
-                       "title": "Koko Market",
-                       "icon": "marker"
-                   }
-               },{
-                   "type": "Feature",
-                   "geometry": {
-                       "type": "Point",
-                       "coordinates": [-76.483359,39.395461]
-                   },
-                   "properties": {
-                       "title": "VMart Filipino Grocery",
-                       "icon": "marker"
-                   }
-               },  {
-                   "type": "Feature",
-                   "geometry": {
-                       "type": "Point",
-                       "coordinates": [-77.03238901390978, 38.913188059745586]
-                   },
-                   "properties": {
-                       "title": "Mapbox DC",
-                       "icon": "monument"
-                   }
-               }, {
-                   "type": "Feature",
-                   "geometry": {
-                       "type": "Point",
-                       "coordinates": [-122.414, 37.776]
-                   },
-                   "properties": {
-                       "title": "Mapbox SF",
-                       "icon": "harbor"
-                   }
-               }]
-           }
+   "type": "FeatureCollection",
+   "features": [
+     {
+       "type": "Feature",
+       "geometry": {
+           "type": "Point",
+           "coordinates": [ -76.617926, 39.293677 ]
        },
-       "layout": {
-           "icon-image": "{icon}-15",
-           "text-field": "{title}",
-           "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
-           "text-offset": [0, 0.6],
-           "text-anchor": "top"
+       "properties": {
+           "title": "Po Tung Oriental Grocery",
+           "icon": "marker"
        }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+           "type": "Point",
+           "coordinates": [ -76.611602, 39.327741 ]
+       },
+       "properties": {
+           "title": "Punjab Groceries & Halal Meat",
+           "icon": "marker"
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+           "type": "Point",
+           "coordinates": [ -76.543952, 39.287818 ]
+       },
+       "properties": {
+           "title": "Koko Market",
+           "icon": "marker"
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+           "type": "Point",
+           "coordinates": [ -76.610502, 39.353737 ]
+       },
+       "properties": {
+           "title": "Asia Food",
+           "icon": "marker"
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+           "type": "Point",
+           "coordinates": [ -76.483359,39.395461 ]
+       },
+       "properties": {
+           "title": "VMart Filipino Grocery",
+           "icon": "marker"
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+           "type": "Point",
+           "coordinates": [ -76.823628, 39.457335 ]
+       },
+       "properties": {
+           "title": "VMart Filipino Grocery",
+           "icon": "marker"
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+           "type": "Point",
+           "coordinates": [ -76.680582, 39.350037 ]
+       },
+       "properties": {
+           "title": "Island Food Market",
+           "icon": "marker"
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+           "type": "Point",
+           "coordinates": [ -76.764044, 39.286777 ]
+       },
+       "properties": {
+           "title": "Lotte Plaza Market",
+           "icon": "marker"
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+           "type": "Point",
+           "coordinates": [ -76.562197, 39.392881 ]
+       },
+       "properties": {
+           "title": "Towson Oriental Food Market",
+           "icon": "marker"
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+           "type": "Point",
+           "coordinates": [ -76.644902, 39.251242 ]
+       },
+       "properties": {
+           "title": "LA Mart",
+           "icon": "marker"
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+           "type": "Point",
+           "coordinates": [-77.03238901390978, 38.913188059745586]
+       },
+       "properties": {
+           "title": "Mapbox DC",
+           "icon": "monument"
+       }
+     },
+     {
+       "type": "Feature",
+       "geometry": {
+           "type": "Point",
+           "coordinates": [-122.414, 37.776]
+       },
+       "properties": {
+           "title": "Mapbox SF",
+           "icon": "harbor"
+       }
+     }
+   ]
 }
