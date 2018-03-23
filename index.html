@@ -28,19 +28,31 @@ let markets;
 
 function reqListener () {
   markets = JSON.parse(this.responseText);
-  // console.log(this.responseText);
 }
 var oReq = new XMLHttpRequest();
 oReq.addEventListener("load", reqListener);
-oReq.open("GET", "geodata.json");
+oReq.open("GET", "data.geojson");
 oReq.send();
 
 
 map.on('load', function () {
+    map.addLayer({
+      id: "markets",
+      type: "symbol",
+      source: {
+          type: "geojson",
+          data: markets
+      },
+      layout: {
+          "icon-image": "{icon}-15",
+          "text-field": "{title}",
+          "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
+          "text-offset": [0, 0.6],
+          "text-anchor": "top"
+      }
 
-    // console.log(markets);
 
-    map.addLayer(markets);
+    });
 });
 </script>
 
