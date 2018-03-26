@@ -61,7 +61,11 @@ map.on('load', function () {
     });
 
     // add markers to map
-    markets.features.forEach(function(marker) {
+    markets.features.forEach(function(feature) {
+
+      // create the popup
+      var popup = new mapboxgl.Popup()
+        .setText(feature.properties.phone);
 
       // create a HTML element for each feature
       var el = document.createElement('div');
@@ -69,7 +73,8 @@ map.on('load', function () {
 
       // make a marker for each feature and add to the map
       new mapboxgl.Marker(el)
-      .setLngLat(marker.geometry.coordinates)
+      .setLngLat(feature.geometry.coordinates)
+      .setPopup(popup)
       .addTo(map);
     });
 
