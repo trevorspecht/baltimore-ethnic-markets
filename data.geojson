@@ -9,6 +9,7 @@
        },
        "properties": {
            "title": "Po Tung Oriental Grocery",
+           "phone": "(410) 962-1510",
            "icon": "marker"
        }
      },
@@ -20,6 +21,7 @@
        },
        "properties": {
            "title": "Punjab Groceries & Halal Meat",
+           "phone": "(410) 662-7844",
            "icon": "marker"
        }
      },
@@ -31,6 +33,7 @@
        },
        "properties": {
            "title": "Koko Market",
+           "phone": "(410) 633-6030",
            "icon": "marker"
        }
      },
@@ -42,6 +45,7 @@
        },
        "properties": {
            "title": "Asia Food",
+           "phone": "(410) 323-8738",
            "icon": "marker"
        }
      },
@@ -75,6 +79,7 @@
        },
        "properties": {
            "title": "Island Food Market",
+           "phone": "(410) 664-1818",
            "icon": "marker"
        }
      },
@@ -86,6 +91,7 @@
        },
        "properties": {
            "title": "Lotte Plaza Market",
+           "phone": "(410) 455-0505",
            "icon": "marker"
        }
      },
@@ -97,6 +103,7 @@
        },
        "properties": {
            "title": "Towson Oriental Food Market",
+           "phone": "(410) 665-8432",
            "icon": "marker"
        }
      },
@@ -108,6 +115,7 @@
        },
        "properties": {
            "title": "LA Mart",
+           "phone": "(410) 646-1501",
            "icon": "marker"
        }
      },
