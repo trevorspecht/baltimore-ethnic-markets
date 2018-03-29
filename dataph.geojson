@@ -9,7 +9,7 @@
        },
        "properties": {
            "title": "Po Tung Oriental Grocery",
-           "phone": "410-962-1510",
+           "phone": "<a href='tel:4109621510'>(410) 962-1510</a>",
            "icon": "marker"
        }
      },
@@ -21,7 +21,7 @@
        },
        "properties": {
            "title": "Punjab Groceries & Halal Meat",
-           "phone": "410-662-7844",
+           "phone": "<a href='tel:4106627844'>(410) 662-7844</a>",
            "icon": "marker"
        }
      },
@@ -33,7 +33,7 @@
        },
        "properties": {
            "title": "Koko Market",
-           "phone": "410-633-6030",
+           "phone": "<a href='tel:4106336030'>(410) 633-6030</a>",
            "icon": "marker"
        }
      },
@@ -45,7 +45,7 @@
        },
        "properties": {
            "title": "Asia Food",
-           "phone": "410-323-8738",
+           "phone": "<a href='tel:4103238738'>(410) 323-8738</a>",
            "icon": "marker"
        }
      },
@@ -57,7 +57,7 @@
        },
        "properties": {
            "title": "VMart Filipino Grocery",
-           "phone": "443-438-8548",
+           "phone": "<a href='tel:4434388548'>(443) 438-8548</a>",
            "icon": "marker"
        }
      },
@@ -69,7 +69,7 @@
        },
        "properties": {
            "title": "VMart Filipino Grocery",
-           "phone": "810-208-6278",
+           "phone": "<a href='tel:8102086278'>(810) 208-6278</a>",
            "icon": "marker"
        }
      },
@@ -81,7 +81,7 @@
        },
        "properties": {
            "title": "Island Food Market",
-           "phone": "410-664-1818",
+           "phone": "<a href='tel:4106641818'>(410) 664-1818</a>",
            "icon": "marker"
        }
      },
@@ -93,7 +93,7 @@
        },
        "properties": {
            "title": "Lotte Plaza Market",
-           "phone": "410-455-0505",
+           "phone": "<a href='tel:4104550505'>(410) 455-0505</a>",
            "icon": "marker"
        }
      },
@@ -105,7 +105,7 @@
        },
        "properties": {
            "title": "Towson Oriental Food Market",
-           "phone": "410-665-8432",
+           "phone": "<a href='tel:4106658432'>(410) 665-8432</a>",
            "icon": "marker"
        }
      },
@@ -117,7 +117,7 @@
        },
        "properties": {
            "title": "LA Mart",
-           "phone": "410-646-1501",
+           "phone": "<a href='tel:4106461501'>(410) 646-1501</a>",
            "icon": "marker"
        }
      },

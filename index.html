@@ -77,10 +77,13 @@ map.on('load', function () {
     // add markers to map
     markets.features.forEach(function(feature) {
 
+      let title = feature.properties.title;
+      let phone = feature.properties.phone;
       // create the popup
       var popup = new mapboxgl.Popup()
         // .setText(feature.properties.phone);
-        .setHTML('<h3>' + feature.properties.title + '</h3><p>' + feature.properties.phone + '</p>')
+        // .setHTML('<h3>' + feature.properties.title + '</h3><p>' + feature.properties.phone + '</p>')
+        .setHTML('<h3>' + title + '</h3><p>' + '<a href=tel:' + phone + '>' + phone + '</a>' + '</p>')
 
 
       // create a HTML element for each feature
@@ -89,9 +92,9 @@ map.on('load', function () {
 
       // make a marker for each feature and add to the map
       new mapboxgl.Marker(el)
-      .setLngLat(feature.geometry.coordinates)
-      .setPopup(popup)
-      .addTo(map);
+        .setLngLat(feature.geometry.coordinates)
+        .setPopup(popup)
+        .addTo(map);
     });
 
 });
