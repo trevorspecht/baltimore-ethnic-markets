@@ -10,6 +10,8 @@
        "properties": {
            "title": "Po Tung Oriental Grocery",
            "phone": "410-962-1510",
+           "address": "321 Park Ave, Baltimore, MD 21201",
+           "website": "",
            "icon": "marker"
        }
      },
@@ -22,6 +24,9 @@
        "properties": {
            "title": "Punjab Groceries & Halal Meat",
            "phone": "410-662-7844",
+           "address": "345 E 33rd St, Baltimore, MD 21218",
+           "website": "",
+
            "icon": "marker"
        }
      },
@@ -34,6 +39,8 @@
        "properties": {
            "title": "Koko Market",
            "phone": "410-633-6030",
+           "address": " 6020 Eastern Ave, Baltimore, MD 21224, United States",
+           "website": "http://kokomarketmd.com/",
            "icon": "marker"
        }
      },
@@ -46,6 +53,8 @@
        "properties": {
            "title": "Asia Food",
            "phone": "410-323-8738",
+           "address": "5224 York Rd, Baltimore, MD 21212",
+           "website": "",
            "icon": "marker"
        }
      },
@@ -58,6 +67,8 @@
        "properties": {
            "title": "VMart Filipino Grocery",
            "phone": "443-438-8548",
+           "address": "8837 Belair Rd, Nottingham, MD 21236",
+           "website": "https://www.mkt.com/vmart",
            "icon": "marker"
        }
      },
@@ -70,6 +81,8 @@
        "properties": {
            "title": "VMart Filipino Grocery",
            "phone": "810-208-6278",
+           "address": "112 Chartley Dr, Reisterstown, MD 21136",
+           "website": "https://www.mkt.com/vmart",
            "icon": "marker"
        }
      },
@@ -82,6 +95,8 @@
        "properties": {
            "title": "Island Food Market",
            "phone": "410-664-1818",
+           "address": "5318 Park Heights Ave, Baltimore, MD 21215",
+           "website": "http://www.islandfoodmarket.com/",
            "icon": "marker"
        }
      },
@@ -94,6 +109,8 @@
        "properties": {
            "title": "Lotte Plaza Market",
            "phone": "410-455-0505",
+           "address": "6600 Baltimore National Pike, Catonsville, MD 21228",
+           "website": "http://www.lotteplaza.com/",
            "icon": "marker"
        }
      },
@@ -106,6 +123,8 @@
        "properties": {
            "title": "Towson Oriental Food Market",
            "phone": "410-665-8432",
+           "address": "8424 Willow Oak Rd, Parkville, MD 21234",
+           "website": "",
            "icon": "marker"
        }
      },
@@ -118,6 +137,8 @@
        "properties": {
            "title": "LA Mart",
            "phone": "410-646-1501",
+           "address": "2159 W Patapsco Ave, Baltimore, MD",
+           "website": "http://la-mart.net/stores.html",
            "icon": "marker"
        }
      }
