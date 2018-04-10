@@ -6,37 +6,20 @@
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.css' rel='stylesheet' />
-    <style>
-
-        body { margin:0; padding:0; }
-        #map { position:absolute; top:0; bottom:0; width:100%; }
-
-    </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
 
-<style>
+<div class='sidebar'>
+  <div class='heading'>
+    <h1>Market List</h1>
+  </div>
+  <div id='listing' class='listings'></div>
+</div>
 
-.marker {
-  background-image: url('market-icon.png');
-  background-size: cover;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  cursor: pointer;
-}
-.mapboxgl-popup {
-  max-width: 200px;
-}
-.mapboxgl-popup-content {
-  text-align: center;
-  font-family: 'Open Sans', sans-serif;
-}
+<div id='map' class='map pad2'></div>
 
-</style>
-
-<div id='map'></div>
 <script>
 mapboxgl.accessToken = 'pk.eyJ1IjoidHJldm9yc3BlY2h0IiwiYSI6ImNqNDdjZ2hvNjAxYWkzMmp0YW90bWhsZmwifQ.0d4-iKYzF8sy7YFpzVOKUA';
 var map = new mapboxgl.Map({
