@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/tuspecht/baltimore-ethnic-markets#readme",
   "devDependencies": {
-    "request": "^2.83.0"
+    "request": "^2.88.0"
+  },
+  "dependencies": {
+    "cryptiles": "^4.1.3"
   }
 }
